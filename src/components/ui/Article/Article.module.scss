@@ -1,0 +1,18 @@
+@import "../../../styles/global.scss";
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.gap__small {
+    gap: 16px;
+}
+
+.gap__regular {
+    gap: 24px;
+}
+
+.gap__large {
+    gap: 32px;
+}
