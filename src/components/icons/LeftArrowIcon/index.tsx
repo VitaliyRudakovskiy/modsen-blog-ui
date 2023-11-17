@@ -1,7 +1,6 @@
-import { type SVGProps } from "react";
 import React from "react";
 
-export default function LeftArrowIcon(props: SVGProps<SVGSVGElement>) {
+function LeftArrowIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       data-testid="icon"
@@ -19,3 +18,5 @@ export default function LeftArrowIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export default React.memo(LeftArrowIcon);

@@ -4,11 +4,7 @@ import React from "react";
 import styles from "./Input.module.scss";
 import { type InputProps } from "./interfaces";
 
-export default function Input({
-  fullPadding = false,
-  errorMessage,
-  ...props
-}: InputProps) {
+function Input({ fullPadding = false, errorMessage, ...props }: InputProps) {
   return (
     <div data-testid="input-wrapper" className={styles.inputWrapper}>
       <input
@@ -26,3 +22,5 @@ export default function Input({
     </div>
   );
 }
+
+export default React.memo(Input);

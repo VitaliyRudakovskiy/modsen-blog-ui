@@ -1,7 +1,6 @@
-import { type SVGProps } from "react";
 import React from "react";
 
-export default function ErrorIcon(props: SVGProps<SVGSVGElement>) {
+function ErrorIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       data-testid="icon"
@@ -20,3 +19,5 @@ export default function ErrorIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export default React.memo(ErrorIcon);

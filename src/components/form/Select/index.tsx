@@ -6,7 +6,7 @@ import { isSelectedOptionDisabled } from "@/helpers/isSelectedOptionDisabled";
 import { type SelectProps } from "./interfaces";
 import styles from "./Select.module.scss";
 
-export default function Select({
+function Select({
   options,
   fullPadding = false,
   errorMessage,
@@ -41,3 +41,5 @@ export default function Select({
     </div>
   );
 }
+
+export default React.memo(Select);

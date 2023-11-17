@@ -4,7 +4,7 @@ import Heading from "../Heading";
 import { type ListProps } from "./interfaces";
 import styles from "./List.module.scss";
 
-export default function List({ elements }: ListProps) {
+function List({ elements }: ListProps) {
   return (
     <ul data-testid="list" className={styles.list}>
       {elements.map((element, index) => (
@@ -15,3 +15,5 @@ export default function List({ elements }: ListProps) {
     </ul>
   );
 }
+
+export default React.memo(List);

@@ -1,7 +1,6 @@
-import { type SVGProps } from "react";
 import React from "react";
 
-export default function TwitterIcon(props: SVGProps<SVGSVGElement>) {
+function TwitterIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       data-testid="icon"
@@ -18,3 +17,5 @@ export default function TwitterIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export default React.memo(TwitterIcon);

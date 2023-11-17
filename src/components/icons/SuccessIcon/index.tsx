@@ -1,7 +1,6 @@
-import { type SVGProps } from "react";
 import React from "react";
 
-export default function SuccessIcon(props: SVGProps<SVGSVGElement>) {
+function SuccessIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       data-testid="icon"
@@ -21,3 +20,5 @@ export default function SuccessIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export default React.memo(SuccessIcon);

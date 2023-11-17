@@ -4,7 +4,7 @@ import React from "react";
 import { type TextAreaProps } from "./interfaces";
 import styles from "./TextArea.module.scss";
 
-export default function TextArea({
+function TextArea({
   fullPadding = false,
   errorMessage,
   ...props
@@ -26,3 +26,5 @@ export default function TextArea({
     </div>
   );
 }
+
+export default React.memo(TextArea);

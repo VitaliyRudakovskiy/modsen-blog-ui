@@ -1,7 +1,6 @@
-import { type SVGProps } from "react";
 import React from "react";
 
-export default function InstagramIcon(props: SVGProps<SVGSVGElement>) {
+function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       data-testid="icon"
@@ -23,3 +22,5 @@ export default function InstagramIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export default React.memo(InstagramIcon);
