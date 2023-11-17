@@ -1,7 +1,6 @@
 {
   "name": "@secondthunder/modsen-client-blog-ui",
-  "type": "module",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Component library for Modsen Client Blog",
   "repository": {
     "type": "git",
