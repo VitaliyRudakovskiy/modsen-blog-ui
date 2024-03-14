@@ -1,0 +1,21 @@
+@import "./globals.scss";
+
+.form__select {
+  font: inherit;
+  width: 100%;
+  padding: $px24;
+  border-radius: $px4;
+  border: none;
+  outline: none;
+  border: 1px solid $mediumGrey;
+  transition: all 0.1s linear;
+
+  &:hover {
+    border: 1px solid $darkGrey;
+  }
+
+  &:focus,
+  &:active {
+    border: 1px solid $yellow;
+  }
+}

@@ -1,1 +1,0 @@
-export { isSelectedOptionDisabled } from "./isSelectedOptionDisabled";

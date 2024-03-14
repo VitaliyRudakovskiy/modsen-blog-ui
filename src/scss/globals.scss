@@ -1,0 +1,64 @@
+$black: #000000;
+$fadedBlack: #00000060;
+$deepBlue: #232536;
+$lightViolet: #2e3040;
+$purple: #592ea9;
+$green: #6aea6a;
+$darkGrey: #4c4c4c;
+$mediumGrey: #6d6e76;
+$red: #ff0000;
+$yellow: #ffd050;
+$deepYellow: #edc14a;
+$lavender: #f4f0f8;
+$lightYellow: #fbf6ea;
+$lightGrey: #f4f4f4;
+$white: #ffffff;
+
+$px4: 4px;
+$px12: 12px;
+$px14: 14px;
+$px16: 16px;
+$px18: 18px;
+$px20: 20px;
+$px24: 24px;
+$px28: 28px;
+$px32: 32px;
+$px36: 36px;
+$px48: 48px;
+$px56: 56px;
+$px64: 64px;
+$px80: 80px;
+
+$breakpoints: (
+  "XL": 1280px,
+  "L": 900px,
+  "tablet": 768px,
+  "phone": 576px,
+);
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin break($breakpoint) {
+  $point: map-get($breakpoints, $breakpoint);
+
+  @if $point {
+    @media (max-width: $point) {
+      @content;
+    }
+  }
+}
